@@ -1,0 +1,132 @@
+/**index.wxss**/
+
+.start {
+    position: relative;
+    /* margin: 0 auto; */
+    /* display: flex; */
+    background: linear-gradient(#F6D658, #F5B743);
+    /* background-color: ; */
+    text-align: center;
+    border-radius: 0 0 85rpx 85rpx;
+}
+
+.start_robot {
+    margin-top: 60rpx;
+    margin-left: -18rpx;
+    width: 516rpx;
+}
+
+.start_info_1 {
+    font-size: 34rpx;
+    letter-spacing: 2rpx;
+    margin-top: 56rpx;
+    color: #fff;
+}
+
+.start_info_2 {
+    margin-top: 14rpx;
+    font-size: 30rpx;
+    color: #FBE8B7;
+}
+
+.start_button {
+    margin-top: 36rpx;
+    padding-bottom: 25rpx;
+    width: 156rpx;
+    height: 156rpx;
+    background-color: transparent;
+}
+
+.start_button::after {
+    border: none;
+}
+
+.start_button image {
+    height: 120rpx;
+    width: 100%;
+}
+
+.recommend {
+    padding-left: 56rpx;
+    position: relative;
+    width: 100%;
+}
+
+.rec_info {
+    display: inline-block;
+    margin-top: 58rpx;
+    margin-left: 20rpx;
+    font-size: 36rpx;
+    color: #F5B743;
+}
+
+.rec_video {
+    margin-top: 28rpx;
+    white-space: nowrap;
+    display: flex;
+}
+
+.rec_items {
+    margin: 0 16rpx;
+    display: inline-block;
+    width: 230rpx;
+    height: 355rpx;
+    background-color: #F5B743;
+    border-radius: 40rpx;
+    text-align: center;
+}
+
+::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+    color: transparent;
+}
+
+.rec_item {
+    width: 100%;
+    height: 100%;
+    /* background-image: url(data:image/jpg;base64,Li4vLi4vaW1hZ2UvbGFfMS5qZmlm); */
+}
+
+.rec_item_la {
+    width: 198rpx;
+    height: 320rpx;
+    border-radius: 40rpx;
+}
+
+.rec_item_icon {
+    z-index: 99;
+    width: 60rpx;
+    height: 60rpx;
+    margin-top: 60%;
+}
+
+.rec_item_info {
+    height: 102rpx;
+    margin-top: 52rpx;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.698);
+    /* padding-bottom: 40rpx; */
+    border-radius: 0 0 40rpx 40rpx;
+}
+
+.rec_item_info text {
+    line-height: 93rpx;
+}
+
+.tarBar {
+    background-color: #000;
+}
+
+.lalalalalala {
+    color: transparent;
+}
+
+.rec_item_info1 {
+    font-size: 30rpx;
+}
+
+.rec_item_info2 {
+    margin-left: 8rpx;
+    font-size: 22rpx;
+}

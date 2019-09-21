@@ -1,0 +1,6 @@
+{
+    "usingComponents": {
+        "showLoading": "../../components/loading/loading",
+        "my_progress": "../../components/progress/progress"
+    }
+}

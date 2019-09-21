@@ -1,0 +1,30 @@
+{
+    "pages": [
+        "pages/index/index",
+        "pages/share_video/index",
+        "pages/video/index",
+        "pages/music/index",
+        "pages/video_gen/index",
+        "pages/share_other/index",
+        "pages/share/index",
+        "pages/me/index",
+        "custom-tab-bar/index"
+    ],
+
+    "tabBar": {
+        "custom": true,
+        "list": [{
+            "pagePath": "pages/index/index"
+        }, {
+            "pagePath": "pages/me/index"
+        }]
+    },
+
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#fff",
+        "navigationBarTextStyle": "black"
+    },
+    "sitemapLocation": "sitemap.json"
+
+}

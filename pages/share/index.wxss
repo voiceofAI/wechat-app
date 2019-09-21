@@ -1,0 +1,67 @@
+/* pages/video/index.wxss */
+
+.main {
+    display: inline;
+}
+
+.image {
+    width: 100%;
+}
+
+.image video {
+    width: 100%;
+    height: 800rpx;
+    /* background-color: #000; */
+}
+
+.save_success {
+    margin-top: 40rpx;
+    color: #F5B743;
+    text-align: center;
+}
+
+.save_ing {
+    margin-top: 40rpx;
+    color: #fff;
+    text-align: center;
+}
+
+.video_box {
+    display: flex;
+    justify-content: center;
+    margin-top: 100rpx;
+}
+
+.video_gens {
+    text-align: center;
+    display: flex;
+    width: 386rpx;
+    /* display: inline; */
+}
+
+.video_info {
+    color: #F5B743;
+    font-size: 34rpx;
+    white-space: nowrap;
+}
+
+.video_gens image {
+    width: 60rpx;
+    height: 60rpx;
+    margin-bottom: 22rpx;
+}
+
+.viden_share {
+    margin-left: 154rpx;
+}
+
+.button::after {
+    border: none;
+}
+
+.button {
+    border: 0rpx;
+    background-color: transparent;
+    height: 90rpx;
+    border-radius: 0;
+}

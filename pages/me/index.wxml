@@ -1,0 +1,31 @@
+<view class="main">
+
+    <view class="main_box">
+        <view class="head">
+            <image class="head_icon" src="../../image/head.png" mode="aspectFit"></image>
+            <view class="head_info">
+                <view class="head_name">{{nickName}}</view>
+                <view class="head_num">已拥有0个配音小视频</view>
+            </view>
+
+        </view>
+
+        <view class="content">
+            <view class="content_head">我发布的内容</view>
+            <view class="content_icon_box" bindtap="viden_again">
+                <image class="content_icon" src="../../image/content_icon.png" mode="aspectFit"></image>
+            </view>
+            <view class="content_info">
+                <text>这里空空如也</text>
+            </view>
+            <view class="content_info">
+                <text>快去给你的第一个小视频配音吧</text>
+            </view>
+        </view>
+
+        <view class="feedback">
+            <view>向我们反馈</view>
+        </view>
+    </view>
+    <MyButton></MyButton>
+</view>

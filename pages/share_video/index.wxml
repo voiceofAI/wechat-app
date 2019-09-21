@@ -1,0 +1,3 @@
+<view class="box">
+    <video class="main" src="{{video_list[share_video_index]}}" autoplay="true" enable-progress-gesture="true"></video>
+</view>

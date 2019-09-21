@@ -1,0 +1,21 @@
+<view class="main">
+    <view class="image">
+        <video src="{{video_path}}"></video>
+    </view>
+
+    <view class="video_gen">
+        <button bindtap="generate_music" class="video_gen_button">自动生成背景音</button>
+        <view class="video_gen_box">
+            <view name="video_gen_tables" class="video_gen_tables">
+                <view class="video_gen_issue">已有想要的主题？</view>
+                <label bindtap='clicks' wx:for="{{video_gen_tables}}" wx:key="{{checks}}" wx:for-index="index" data-index="{{index}}">
+                    <image wx:if="{{checks_id==index}}" class="video_gen_icon" src="{{str_dict_on[item.value]}}" mode="aspectFit"></image>
+                    <image wx:else class="video_gen_icon" src="{{str_dict_off[item.value]}}" mode="aspectFit"></image>
+                </label>
+            </view>
+        </view>
+    </view>
+</view>
+
+<showLoading showloadingMask='{{showloadingMask}}' pathImg='{{pathImg_xsw}}' showloadingTitle='{{showloadingTitle}}'>
+</showLoading>

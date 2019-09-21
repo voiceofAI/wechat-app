@@ -1,0 +1,9 @@
+<view class='showloadingMaskZ' style="display:{{showloadingMask=='true'?'block':'none'}}">
+    <view class='showloading'>
+        <view direction="all" class='showloading_k'>
+            <image src='{{pathImg}}'></image>
+            <view>{{showloadingTitle}}</view>
+        </view>
+
+    </view>
+</view>

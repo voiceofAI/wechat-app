@@ -1,0 +1,55 @@
+/* pages/video/index.wxss */
+
+.main {
+    display: inline;
+}
+
+.image {
+    width: 100%;
+}
+
+.image video {
+    width: 100%;
+    height: 800rpx;
+    /* background-color: #000; */
+}
+
+.video_box {
+    display: flex;
+    justify-content: center;
+    margin-top: 170rpx;
+}
+
+.video_gens {
+    text-align: center;
+    display: flex;
+    width: 386rpx;
+    /* display: inline; */
+}
+
+.video_info {
+    color: #F5B743;
+    font-size: 34rpx;
+    white-space: nowrap;
+}
+
+.video_gens image {
+    width: 80rpx;
+    height: 80rpx;
+    margin-bottom: 22rpx;
+}
+
+.viden_share {
+    margin-left: 170rpx;
+}
+
+.button::after {
+    border: none;
+}
+
+.button {
+    border: 0rpx;
+    background-color: transparent;
+    height: 108rpx;
+    border-radius: 0;
+}

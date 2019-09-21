@@ -1,0 +1,8 @@
+{
+  "npm": {
+    "dest": "dist"
+  },
+  "compilers": {
+    "babel": false
+  }
+}

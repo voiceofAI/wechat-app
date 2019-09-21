@@ -1,0 +1,18 @@
+<view class="main">
+    <view class="image">
+        <video src="{{video_path}}"></video>
+    </view>
+
+    <view class="video_gens">
+        <label class="video_gen_box" bindtap='clicks' wx:for="{{video_gen_tables}}" wx:key="{{checks}}" wx:for-index="index" data-index="{{index}}">
+            <view class='video_gen {{checks_id==index?"is_checked":"checked"}}'>
+                <image class="video_icon" src="{{checks_id==index?item.icon_url_on:item.icon_url_off}}" mode="aspectFit"></image>
+                <view>{{item.name}}</view>
+            </view>
+        </label>
+        <button bindtap="generate_video" class="video_gen_button">生成视频</button>
+    </view>
+</view>
+
+<showLoading showloadingMask='{{showloadingMask}}' pathImg='{{pathImg_xsw}}' showloadingTitle='{{showloadingTitle}}'>
+</showLoading>

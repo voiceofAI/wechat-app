@@ -1,0 +1,9 @@
+{
+    "usingComponents": {
+        "MyButton": "../../custom-tab-bar/index",
+        "mp-loading": "../../components/loading/loading",
+        "showLoading": "../../components/loading/loading"
+    },
+    "navigationBarTitleText": "AI好声音",
+    "navigationBarBackgroundColor": "#F7D859"
+}

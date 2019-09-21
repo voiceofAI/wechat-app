@@ -1,0 +1,32 @@
+<view class="main" wx:for="{{voiceList}}" wx:key="{{index}}">
+    <view class='music' catchtap='play_music' data-index="{{index}}">
+        <view class='music_bottom'>
+            <!-- 按钮 -->
+            <view class="music_bottom_icons">
+                <view wx:if="{{index==preIndex}}">
+                    <image src='../../image/bofang2x.png' mode='aspectFit' class="{{voiceList[index].isPlayAudio?'music_icon_run music_icon': 'music_icon'}}" />
+                </view>
+                <view wx:else>
+                    <image src='../../image/shiting2x.png' mode='aspectFit' class="music_icon" />
+                </view>
+            </view>
+
+            <view class="music_bottom_info">
+                <text wx:if="{{index==preIndex}}">{{name_list[index]}}</text>
+                <text wx:else style="color: #A1A1A1">{{name_list[index]}}</text>
+                <view>
+                    <progress active-mode='forwards' border-radius='10' bindchange='sliderChange' stroke-width="18" activeColor='#F5B743' backgroundColor="#A1A1A1" percent="{{item.audioTime}}" />
+                    <!-- <my_progress bar="{{bar_list[index]}}"></my_progress> -->
+                </view>
+            </view>
+        </view>
+        <button bindtap="music_select" data-index="{{index}}" wx:if="{{index==preIndex}}" class="music_select">选择</button>
+    </view>
+</view>
+
+<view bindtap="music_again" class="music_again">
+    不满意？重新生成
+</view>
+
+<showLoading showloadingMask='{{showloadingMask}}' pathImg='{{pathImg_xsw}}' showloadingTitle='{{showloadingTitle}}'>
+</showLoading>

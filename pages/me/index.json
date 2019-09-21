@@ -1,0 +1,5 @@
+{
+    "usingComponents": {
+        "MyButton": "../../custom-tab-bar/index"
+    }
+}

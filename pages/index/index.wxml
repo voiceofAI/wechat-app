@@ -1,0 +1,46 @@
+<!--index.wxml-->
+
+<scroll-view class="main" scroll-y>
+    <view class="start">
+        <image class="start_robot" src="../../image/robot.png" mode="aspectFit"></image>
+        <view class="start_info_1">给你的第一个小视频配音吧</view>
+        <view class="start_info_2">一次只能上传一个呦</view>
+        <button open-type="getUserInfo" bindgetuserinfo='getVideo' class="start_button">
+            <image src="../../image/video_upload.png" mode="aspectFit" />
+        </button>
+        <!-- <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button> -->
+    </view>
+
+    <showLoading showloadingMask='{{showloadingMask}}' pathImg='{{pathImg_xsw}}' showloadingTitle='{{showloadingTitle}}'>
+    </showLoading>
+
+    <view class="recommend">
+        <text class="rec_info">查看大家的金曲</text>
+        <view class="rec_videos">
+            <scroll-view class="rec_video" scroll-x>
+                <view class="rec_items" wx:for="{{musicList}}" wx:key="{{index}}">
+                    <view class="rec_item" catchtap='jump_share_video' data-index="{{index}}" style="background-image: url('{{item.img_url}}'); background-size: 100% 100%; border-radius: 40rpx;">
+                        <!-- <image class="rec_item_la" src="{{item.img_url}}" mode="scaleToFill"></image> -->
+                        <image wx:if="{{index==preIndex}}" class="rec_item_icon" src="../../image/pause.png" mode="aspectFit"></image>
+                        <image wx:else class="rec_item_icon" src="../../image/video_play.png" mode="aspectFit"></image>
+                        <view class="rec_item_info">
+                            <text class="rec_item_info1">{{item.info1}}</text>
+                            <text class="rec_item_info2">{{item.info2}}</text>
+                        </view>
+                    </view>
+                </view>
+            </scroll-view>
+        </view>
+    </view>
+
+    <view class="lalalalalala">lalalalalalala</view>
+    <view class="lalalalalala">lalalalalalala</view>
+    <view class="lalalalalala">lalalalalalala</view>
+    <view class="lalalalalala">lalalalalalala</view>
+    <view class="lalalalalala">lalalalalalala</view>
+    <view class="lalalalalala">lalalalalalala</view>
+
+    <!-- <MyButton></MyButton> -->
+    <MyButton tabbar="{{MyButton}}" data-index="0"></MyButton>
+
+</scroll-view>

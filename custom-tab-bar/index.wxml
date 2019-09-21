@@ -1,0 +1,23 @@
+<view class="switchTab">
+    <view class="tarBar_creation" data-index="0" bindtap="switchTab">
+        <image wx:if="{{selected==0}}" class="tarBar_creation_icon tarBar_icon1" src="../image/music_on.png" mode="aspectFit"></image>
+        <image wx:else class="tarBar_creation_icon tarBar_icon3" src="../image/music_off.png" mode="aspectFit"></image>
+        <block wx:if="{{selected==0}}">
+            <view>创作</view>
+        </block>
+        <block wx:else>
+            <view style="color:#9E9E9E">创作</view>
+        </block>
+    </view>
+    <view class="tarBar_creation" data-index="1" bindtap="switchTab">
+        <image wx:if="{{selected==1}}" class="tarBar_creation_icon tarBar_icon4" src="../image/me_on.png" mode="aspectFit"></image>
+        <image wx:else class="tarBar_creation_icon tarBar_icon2" src="../image/me_off.png" mode="aspectFit"></image>
+        <block wx:if="{{selected==1}}">
+            <view>我</view>
+        </block>
+        <block wx:else>
+            <view style="color:#9E9E9E">我</view>
+        </block>
+
+    </view>
+</view>

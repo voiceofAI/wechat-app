@@ -1,0 +1,35 @@
+<view class="main">
+    <!-- <mp-navigation-bar loading="{{loading}}" show="{{show}}" animated="{{animated}}" color="{{color}}" background="{{background}}" title="Navigation" back="{{true}}"></mp-navigation-bar> -->
+
+    <view class="image">
+        <video src="{{video_path}}"></video>
+    </view>
+
+    <view class="save_success">
+        <view wx:if="{{save_success}}">
+            已保存到本地
+        </view>
+        <view wx:else style="color: #fff">
+            已保存到本地
+        </view>
+    </view>
+
+    <!-- <view>{{save_success}}</view> -->
+
+    <view class="video_box">
+        <view class="video_gens">
+            <view bindtap="viden_again" class="">
+                <image class="viden_share_icon" src="../../image/share_music.png" mode="aspectFit"></image>
+                <view class="video_info">再来一段</view>
+            </view>
+
+            <view class="viden_share">
+                <button bindtap="on_share" class="button" open-type="share">
+                    <image class="viden_share_icon" src="../../image/share.png" mode="aspectFit"></image>
+                </button>
+                <view class="video_info">分享</view>
+            </view>
+        </view>
+    </view>
+
+</view>
